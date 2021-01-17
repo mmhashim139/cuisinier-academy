@@ -22,10 +22,12 @@
     <title>Cuisinier Academy</title>
   </head>
   <body>
-    <h1>cuisinier academy ....</h1>
+
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
+    {% block content %}
+    {% endblock %}
 
   </body>
 </html>

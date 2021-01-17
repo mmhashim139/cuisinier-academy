@@ -2,7 +2,8 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
 
     <!-- Required meta tags -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,28 +12,82 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!-- CSS -->
-         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 
 
     <!--  Main JavaScript -->
     <script src="{% static 'js/main.js' %}"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
     <title>Cuisinier Academy</title>
-  </head>
-  <body>    
+</head>
+
+<body>
+    <!-- ===================================================================================================== -->
+    <!-- Fullscreen Overlay Navbar 
+    Started from W3School https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp 
+    Customize by add fontawasome bar icon and restyle size & Color
+    -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">Workshops</a>
+            <a href="#">About Us</a>
+            <a href="#">Login</a>
+            <a href="#">My Account</a>
+            <a href="#">Log out</a>
+        </div>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-bars navbaricon"></i></span>
+    <!-- ===================================================================================================== -->
+
     {% if messages %}
-        <div class="message-container"></div>
+    <div class="message-container"></div>
     {% endif %}
     {% block content %}
     {% endblock %}
 
-  </body>
+
+    <!-- ===================================================================================================== -->
+    <footer class="container-fluid">
+        <div class="row justify-content-between">
+            <div class="col-lg-4 col-sm-12">
+                <h5 class="footer-header text-center">Cuisinier Academy</h5>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h5 class="footer-header">Follow us </h5>
+                <ul>
+                    <li><a class="footer-social-icon" href="https://www.facebook.com" target="_blank"><i
+                                class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a class="footer-social-icon" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a class="footer-social-icon" href="https://www.twitter.com" target="_blank"><i
+                                class="fab fa-twitter-square"></i> Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Copyright text-center">
+            © 2021 Copyright This website is for Educational Purposes Only, Built for Code Institute as MS4
+        </div>
+    </footer>
+    <!-- ===================================================================================================== -->
+
+</body>
+
 </html>

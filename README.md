@@ -1,45 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+cuisinier-academy
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+We provide a top in the fild cooking workshops
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The goal of this website to provide a user experiance 
+that convert visitors to paid customers  and provide admin access
+to manage website content and customers regestration
 
-`python3 -m http.server`
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+Database diagram - image attached
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+basic wirframe - attached 
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+### User stories
+User :
+Have a nice user experience , responsive ,rich media , simple navbar
+Easy navigate through website
+view a list of available workshops
+View trainers 
+Learn about the company
+View other customers testimonies
+Find a contact info and social media links
+Contact the company through contact us form
+view workshop details , agenda , trainer, date , location , price
+register for an account
+login or logout
+log into my account via an existing social or email account
+reset my password
+have a user profile, with my orders
+Easy book my seat with my account info
+view my order details / cost 
+Secure checkout, easy to fill form , payment details
+view an order confirmation  , Thanks page after checkout
+receive an email confirmation after checking out
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
+Admin
+Have a super user account 
+add workshop
+edit workshop details
+delete workshop
+add trainer
+edit trainer details
+delete trainer
+Add testimonies
+View  workshops registration
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Send verification email for new account
+Send order email for confirmed orders

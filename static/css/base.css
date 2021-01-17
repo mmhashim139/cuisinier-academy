@@ -67,6 +67,28 @@ body{
 
 
 /* =============================== */
+/* Hero Image and Title */
+.main-header {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 90%), url('/media/header.jpg'); /* I used https://cssgradient.io/ to generate gradient*/
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-titile{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -90%);
+    color: rgba(255, 0, 0, 0.8) ;
+    font-size: 62px;
+}
+
+/* =============================== */
+.page-down{
+    height: 1500px; /* to test */
+}
+/* =============================== */
 /* Footer */
 .footer-header{
     color: white;
@@ -75,7 +97,11 @@ body{
     padding-right: 10px;
 }
 .footer-social-icon {
-    color: red;
+    color: rgba(255, 0, 0, 0.8);
+}
+
+footer ul {
+    list-style-type: none;
 }
 .Copyright {
     color: gray;
@@ -86,6 +112,3 @@ body{
 
 
 
-.header-titile{
-    color: red ;
-}

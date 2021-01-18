@@ -88,6 +88,8 @@ body{
 
 .header-titile span{
     color: red;
+    font-size: 58px;
+    font-weight: bold;
 }
 .btn-header{
     margin: 30px 20px 20px 100px ;
@@ -125,14 +127,14 @@ body{
 .workshops-section{
     height: 100vh;
 }
-.workshops-section h2 {
+.section-title {
     color: red;
     font-size: 48px;
     font-family: 'flamenco', sans-serif;
     justify-content: left;  
 }
 
-.workshops-section p {
+.section-title-para {
     color: rgba(255, 255, 255, 0.76);
     font-size: 18px;
     font-family: 'Lato', sans-serif;
@@ -151,6 +153,7 @@ body{
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     padding: 15px 45px;
+    margin-bottom: 20px;
 
 }
 .btn-header-2:hover{
@@ -172,17 +175,16 @@ body{
     text-decoration:none; 
 }
 .workshop-img-bg:hover{
-    -webkit-clip-path: inset(5px);
-    clip-path: inset(5px);
+    -webkit-clip-path: inset(10px);
+    clip-path: inset(10px);
     text-decoration:none; 
     cursor:pointer;
-    background-image: linear-gradient(0deg, rgba(255, 255, 0, 0.2) 15%, rgba(0,0,0,0) 40%, rgba(255,255,0,0.2) 100%), url('/media/workshopimg.jpg');
+    background-image: linear-gradient(0deg, rgba(255, 255, 0, 0.2) 0%, rgba(187, 105, 105, 0.5) 70%, rgba(255,255,0,0.2) 100%), url('/media/workshopimg.jpg');
 }
 .workshop-img-bg h2 {
     color: white;
     font-size: 32px;
     font-family: 'flamenco', sans-serif;
-    font-style: italic;
     font-weight: bold;
     justify-content: center;  
     margin-top: 5px;
@@ -217,11 +219,70 @@ footer ul {
 }
 /* =============================== */
 
+/* ==== separators ==*/ 
+.separator-1 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('/media/separator-1.jpg'); 
+    background-size: cover;
+    height: 30vh;  
+}
+.separator-2 {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('/media/separator-1.jpg'); /*change image*/
+    background-size: cover;
+    height: 30vh;  
+}
+
+
+/* ============================== */
+/* Our Experts */
+.experts-section{
+    height: 70vh;
+
+}
+.experts-section-header{
+    margin: 10px auto;
+}
+.experts-section .section-title {
+    margin-bottom: 48px;
+}
+
+.expert-card {
+    text-decoration: none;
+    opacity: 0.5;
+}
+.expert-card:hover {
+    opacity: 1;
+}
+.expert-link:hover {
+    text-decoration: none;
+}
+.expert-img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.expert-card h4 {
+    color: red;
+    font-size: 24px;
+    font-family: 'flamenco', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 5px;  
+}
+.expert-card p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    justify-content: center; 
+    margin-top: 5px;
+    padding-top: 5px;
+}
 
 
 /* to test */
 .page-down{
-    height: 1500px; 
+    height: 1000px; 
 }
-
-

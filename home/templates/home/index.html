@@ -3,12 +3,13 @@
 
 {% block content %}
 <!-- Header Content -->
-<div class="main-header">
-    <h1 class="header-titile">Hands-on <span> Workshops </span> with the World's Top Experts in <span> Cuisinier
-            Academy</span> </h1>
-    <button type="button" class="btn btn-header">Our Workshops</button>
-</div>
-
+<section>
+    <div class="main-header">
+        <h1 class="header-titile">Hands-on <span> Workshops </span> with the World's Top Experts in <span> Cuisinier
+                Academy</span> </h1>
+        <button type="button" class="btn btn-header">Our Workshops</button>
+    </div>
+</section>
 
 <!-- Our Workshops -->
 
@@ -18,8 +19,8 @@
             <!-- Workshops paragraph -->
             <div class="col-lg-6">
                 <div class="container-fluid workshops-section">
-                    <h2>Our Workshops</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <h2 class="section-title">Our Workshops</h2>
+                    <p class="section-title-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                         Temporibus deserunt culpa error nisi possimus mollitia reprehenderit accusantium
                         consequatur, quasi incidunt nemo odio architecto dolores assumenda provident officia aut
                         repellendus</p>
@@ -66,5 +67,49 @@
     </div>
 </section>
 
+
+<section>
+    <div class="container-fluid separator-1">
+    </div>
+</section>
+
+<!-- Our Experts-->
+
+<section class="experts-section">
+    <div class="container experts-section-header">
+        <h2 class="section-title text-center">Our Experts</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 expert-card">
+                <a href="#" class="expert-link">
+                    <img class="rounded-circle text-center expert-img" src="../../../media/chef1.jpg" alt="" />
+                    <h4 class="text-center">Karen Akunowicz</h4>
+                    <p class="text-center">Italian Gastronomy Expert</p>
+                </a>
+            </div>
+            <div class="col-lg-4 expert-card">
+                <a href="#" class="expert-link">
+                    <img class="rounded-circle text-center expert-img" src="../../../media/chef1.jpg" alt="" />
+                    <h4 class="text-center">Karen Akunowicz</h4>
+                    <p class="text-center">Italian Gastronomy Expert</p>
+                </a>
+            </div>
+            <div class="col-lg-4 expert-card">
+                <a href="#" class="expert-link">
+                    <img class="rounded-circle text-center expert-img" src="../../../media/chef1.jpg" alt="" />
+                    <h4 class="text-center">Karen Akunowicz</h4>
+                    <p class="text-center">Italian Gastronomy Expert</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
 <section class="page-down"></section>
 {% endblock %}

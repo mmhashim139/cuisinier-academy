@@ -7,7 +7,7 @@ class Workshop(models.Model):
     sub_title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     # expert = models.ForeignKey(Expert, on_delete=models.DO_NOTHING)
-    main_img = models.ImageField(null=True, blank=True)
+    main_img = models.ImageField(null=True, blank=True) # upload file path 
     image_1 = models.ImageField(null=True, blank=True)
     image_2 = models.ImageField(null=True, blank=True)
     image_3 = models.ImageField(null=True, blank=True)
@@ -20,4 +20,4 @@ class Workshop(models.Model):
     is_published = models.BooleanField(default=True)
 
     def __str__(self):
-        return self.name
+        return self.title

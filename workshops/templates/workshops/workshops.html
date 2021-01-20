@@ -2,6 +2,12 @@
 {% load static %}
 
 {% block content %}
-        <h1 class="header-titile"> <span> All workshops</span></h1>
+    {% if workshops %}
+        {% for workshop in workshops %}
+            <h1 class="header-titile"> <span> All workshops</span></h1>
 
+            <h2 class="header-titile">{{ workshop.title }}</h2>
+            <a href="{% url 'workshop' workshop.id %}" class="btn btn-header">workshop here</a>
+        {% endfor %}
+        {% endif %}
 {% endblock %}

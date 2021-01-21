@@ -5,7 +5,6 @@ from .models import Workshop
 # Create your views here.
 def workshops(request):
     workshops = Workshop.objects.all()
-
     context = {
         'workshops': workshops,
     }

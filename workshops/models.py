@@ -7,7 +7,7 @@ class Workshop(models.Model):
     title = models.CharField(max_length=100)
     sub_title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
-    expert = models.ForeignKey(Expert, on_delete=models.DO_NOTHING)
+    expert = models.ForeignKey(Expert,default=None, on_delete=models.DO_NOTHING)
     main_img = models.ImageField(null=True, blank=True) # upload file path 
     image_1 = models.ImageField(null=True, blank=True)
     image_2 = models.ImageField(null=True, blank=True)

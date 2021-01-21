@@ -8,6 +8,7 @@ class Expert(models.Model):
     profile_image = models.ImageField(null=True, blank=True)
     facbook_link = models.CharField(default='www.facebook.com', max_length=200)
     twitter_link = models.CharField(default='www.twitter.com', max_length=200)
+    # classes ?
 
     def __str__(self):
         return self.name

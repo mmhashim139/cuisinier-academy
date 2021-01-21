@@ -5,5 +5,11 @@
 
             <h1 class="header-titile"> <span> Our Experts</span></h1>
 
+    {% if experts %}
+        {% for expert in experts %}
+        <h2 class="header-titile">{{ expert.name }}</h2>
+        <h2 class="header-titile">{{ expert.about }}</h2>
+        {% endfor %}
+    {% endif %}
 
 {% endblock %}

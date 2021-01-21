@@ -8,6 +8,10 @@
     {% if experts %}
         {% for expert in experts %}
         <h2 class="header-titile">{{ expert.name }}</h2>
+        <!-- If the expert has more than workshop -->
+        {% for w in workshop %}
+        <a href="{% url 'workshop' w.id %}" class="btn btn-header">{{ w }}</a>
+        {% endfor %}
         <h2 class="header-titile">{{ expert.about }}</h2>
         {% endfor %}
     {% endif %}

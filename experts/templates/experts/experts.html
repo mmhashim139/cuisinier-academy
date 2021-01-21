@@ -3,14 +3,15 @@
 
 {% block content %}
 
-            <h1 class="header-titile"> <span> Our Experts</span></h1>
+ <h1 class="header-titile"> <span> Our Experts</span></h1>
 
     {% if experts %}
         {% for expert in experts %}
         <h2 class="header-titile">{{ expert.name }}</h2>
+        <a href="{% url 'expert' expert.id %}" class="btn btn-header">About  {{ expert.name }}</a>
         <!-- If the expert has more than workshop -->
         {% for w in workshop %}
-        <a href="{% url 'workshop' w.id %}" class="btn btn-header">{{ w }}</a>
+        <a href="{% url 'workshop' w.id %}" class="btn ">{{ w }}</a>
         {% endfor %}
         <h2 class="header-titile">{{ expert.about }}</h2>
         {% endfor %}

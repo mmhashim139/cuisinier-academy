@@ -4,7 +4,10 @@
 {% block content %}
 <h1 class="header-titile"> <span> {{ workshop.title }}</span></h1>
 <h1 class="header-titile"> {{ workshop.sub_title }}</h1>
-<h2 class="header-titile">{{ workshop.expert }}</h2>
+{% for e in expert %}
+<h2 class="header-titile">with the Expert</h2>
+<a href="{% url 'expert' e.id %}" class="btn btn-header">{{ e.name }}</a>
+{% endfor %}
 <h1 class="header-titile"> {{ workshop.description }}</h1>
 <div class="container">
     <img src="{{ workshop.main_img.url }}" alt="">

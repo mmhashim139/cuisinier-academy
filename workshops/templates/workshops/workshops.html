@@ -6,7 +6,10 @@
     {% if workshops %}
         {% for workshop in workshops %}
             <h2 class="header-titile">{{ workshop.title }}</h2>
-            <h2 class="header-titile">{{ workshop.expert }}</h2>
+            {% for e in expert %}
+                <h2 class="header-titile">with the Expert</h2>
+                <a href="{% url 'expert' e.id %}" class="btn btn-header">{{ e.name }}</a>
+                {% endfor %}
             <a href="{% url 'workshop' workshop.id %}" class="btn btn-header">workshop here</a>
         {% endfor %}
         {% endif %}

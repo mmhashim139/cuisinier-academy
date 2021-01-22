@@ -2,6 +2,15 @@
 {% load static %}
 
 {% block content %}
-<h1 class="header-titile">My Profile</h1>
+
+{% for u in user %}
+<h2 >email : {{ u }}</h2>
+<h2 >first name : {{ u.first_name }}</h2>
+<h2 >last name : {{ u.last_name }}</h2>
+<h2 >phone number : {{ u.phone_number }}</h2>
+
+{% endfor %}
+
+
 
 {% endblock %}

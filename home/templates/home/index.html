@@ -7,7 +7,7 @@
     <div class="main-header">
         <h1 class="header-titile">Hands-on <span> Workshops </span> with the World's Top Experts in <span> Cuisinier
                 Academy</span> </h1>
-        <button type="button" class="btn btn-header">Our Workshops</button>
+        <a href="{% url 'workshops'%}" class="btn btn-header">Our Workshops</a>
     </div>
 </section>
 
@@ -61,7 +61,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <button type="button" class="btn btn-header-2">All Workshops</button>
+                <a href="{% url 'workshops'%}" class="btn btn-header-2">All Workshops</a>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
 </section>
 
 <!-- About Us -->
-<section class="about-section">
+<section id="about-us" class="about-section">
     <div class="container ">
         <h2 class="section-title text-center">Cuisinier Academy</h2>
         <p class="about-para text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At impedit tempore

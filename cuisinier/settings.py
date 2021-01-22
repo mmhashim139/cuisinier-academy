@@ -45,7 +45,8 @@ INSTALLED_APPS = [
 
     'home',
     'workshops',
-    'experts'
+    'experts',
+    'account',
 ]
 
 MIDDLEWARE = [
@@ -93,7 +94,7 @@ SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True

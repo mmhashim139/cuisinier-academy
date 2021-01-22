@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'home',
     'workshops',
     'experts',
-    'account',
 ]
 
 MIDDLEWARE = [

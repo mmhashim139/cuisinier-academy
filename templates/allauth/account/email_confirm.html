@@ -7,25 +7,38 @@
 
 
 {% block content %}
-<h1 class="allauth-header">{% trans "Confirm E-mail Address" %}</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 allauth-card">
+            <h1 class="allauth-header">{% trans "Confirm E-mail Address" %}</h1>
 
-{% if confirmation %}
+            {% if confirmation %}
 
-{% user_display confirmation.email_address.user as user_display %}
+            {% user_display confirmation.email_address.user as user_display %}
 
-<p  class="allauth-para">{% blocktrans with confirmation.email_address.email as email %}Please confirm that <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user {{ user_display }}.{% endblocktrans %}</p>
+            <p class="allauth-para">{% blocktrans with confirmation.email_address.email as email %}Please confirm that
+                <a href="mailto:{{ email }}">{{ email }}</a> is an e-mail address for user
+                {{ user_display }}.{% endblocktrans %}</p>
 
-<form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
-{% csrf_token %}
-    <button class="allauth-btn-primary" type="submit">{% trans 'Confirm' %}</button>
-</form>
+            <form class="allauth-form" method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+                {% csrf_token %}
+                <button class="allauth-btn-primary" type="submit">{% trans 'Confirm' %}</button>
+            </form>
 
-{% else %}
+            {% else %}
 
-{% url 'account_email' as email_url %}
+            {% url 'account_email' as email_url %}
 
-<p  class="allauth-para">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
+            <p class="allauth-para">{% blocktrans %}This e-mail confirmation link expired or is invalid. Please <a
+                    href="{{ email_url }}">issue a new e-mail confirmation request</a>.{% endblocktrans %}</p>
 
-{% endif %}
-
+            {% endif %}
+        </div>
+    </div>
+</div>
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
 {% endblock %}

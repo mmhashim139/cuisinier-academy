@@ -313,13 +313,56 @@ body{
 /* ================================== */
 
 /* Allauth */
+
+
 .allauth-header{
     color: red;
+    text-align: center;
+    margin: 20px auto;
 }
 
 .allauth-para{
     color: white;
+    text-align: center;
+    margin: 20px auto;
 }
+
+.allauth-form label{
+    color: white;
+    font-size: 24px;
+    font-family: 'flamenco', sans-serif;
+
+}
+.allauth-form input {
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    font-size: 28px;
+    border-radius: 300px;
+    border-color: rgba(255, 0, 0, 0.5); 
+    width: 100%;
+    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.allauth-form button {
+    margin-left: 40%;
+}
+
+#id_remember { 
+    height: 15px;
+    justify-content: left;
+    width: 5%;
+}
+
+.socialaccount_providers {
+        text-align: center;
+}
+
+.socialaccount_providers li::marker{
+    color: black;
+}
+
 .allauth-btn-primary {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0,0,0);
@@ -333,6 +376,7 @@ body{
     padding: 5px 10px;
     margin: 5px;  
     text-decoration: none;
+    align-items: center;
 }
 .allauth-btn-primary:hover{
     color: rgba(255, 0, 0);
@@ -341,3 +385,30 @@ body{
     text-decoration: none;
 }
 
+.allauth-btn-secondary {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0,0,0);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 10px;
+    margin: 5px;  
+    text-decoration: none;
+    align-items: center;   
+}
+
+.allauth-btn-secondary:hover {
+    color: rgba(255, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* error messages */
+.errorlist {
+    color: red;
+    font-size: 18px;
+
+}
+.errorlist li::marker{
+    color: black;
+    text-align: center;
+}

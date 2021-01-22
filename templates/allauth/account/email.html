@@ -5,9 +5,9 @@
 {% block head_title %}{% trans "E-mail Addresses" %}{% endblock %}
 
 {% block content %}
-    <h1>{% trans "E-mail Addresses" %}</h1>
+    <h1 class="allauth-header">{% trans "E-mail Addresses" %}</h1>
 {% if user.emailaddress_set.all %}
-<p>{% trans 'The following e-mail addresses are associated with your account:' %}</p>
+<p class="allauth-para">{% trans 'The following e-mail addresses are associated with your account:' %}</p>
 
 <form action="{% url 'account_email' %}" class="email_list" method="post">
 {% csrf_token %}
@@ -17,7 +17,7 @@
 <div class="ctrlHolder">
       <label for="email_radio_{{forloop.counter}}" class="{% if emailaddress.primary %}primary_email{%endif%}">
 
-      <input id="email_radio_{{forloop.counter}}" type="radio" name="email" {% if emailaddress.primary or user.emailaddress_set.count == 1 %}checked="checked"{%endif %} value="{{emailaddress.email}}"/>
+      <input class="allauth-btn-primary" id="email_radio_{{forloop.counter}}" type="radio" name="email" {% if emailaddress.primary or user.emailaddress_set.count == 1 %}checked="checked"{%endif %} value="{{emailaddress.email}}"/>
 
 {{ emailaddress.email }}
     {% if emailaddress.verified %}
@@ -40,17 +40,17 @@
 </form>
 
 {% else %}
-<p><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
+<p class="allauth-para"><strong>{% trans 'Warning:'%}</strong> {% trans "You currently do not have any e-mail address set up. You should really add an e-mail address so you can receive notifications, reset your password, etc." %}</p>
 
 {% endif %}
 
   {% if can_add_email %}
-    <h2>{% trans "Add E-mail Address" %}</h2>
+    <h2  class="allauth-header">{% trans "Add E-mail Address" %}</h2>
 
     <form method="post" action="{% url 'account_email' %}" class="add_email">
         {% csrf_token %}
         {{ form.as_p }}
-        <button name="action_add" type="submit">{% trans "Add E-mail" %}</button>
+        <button class="allauth-btn-primary" name="action_add" type="submit">{% trans "Add E-mail" %}</button>
     </form>
   {% endif %}
 

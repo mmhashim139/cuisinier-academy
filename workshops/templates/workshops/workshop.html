@@ -4,6 +4,17 @@
 {% block content %}
 <h1 class="header-titile"> <span> {{ workshop.title }}</span></h1>
 <h1 class="header-titile"> {{ workshop.sub_title }}</h1>
+<!-- booking Button -->
+<form class="" action="" method="POST">
+    {% csrf_token %}
+    <div class="">
+        <div class="col-12">
+            <input type="submit" class="btn btn-header" value="Reserve your Spot">
+        </div>
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+    </div>
+</form>
+<!-- = = = = = =  -->
 {% for e in expert %}
 <h2 class="header-titile">with the Expert</h2>
 <a href="{% url 'expert' e.id %}" class="btn btn-header">{{ e.name }}</a>

@@ -23,7 +23,7 @@ def workshop(request, workshop_id):
 
     context = {
         'workshop': workshop,
-        'expert' : expert,
+        'expert': expert,
     }
 
     return render(request, 'workshops/workshop.html', context)

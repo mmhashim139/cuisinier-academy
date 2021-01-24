@@ -1,19 +1,16 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.contrib import messages
 from workshops.models import Workshop
+from .forms import OrderForm
 
 
 def create_reservation(request, workshop_id):
-    # if user authinticated , else login / crete an acount
-    if request.user.is_authenticated:
-        workshop = get_object_or_404(Workshop, pk=workshop_id)
-        user = request.user
-        context = {
-            'workshop': workshop,
-            'user': user,
-            }
-        return render(request, 'reservations/reservations.html', context)
+    workshop = get_object_or_404(Workshop, pk=workshop_id)
+    order_form = OrderForm()
+    template = 'reservations/reservations.html'
+    context = {
+        'workshop': workshop,
+        'order_form': order_form,
+    }
 
-    else:
-        # login and then redirect to the orfer page ???
-        template = "account/login.html"
-        return render(request, template)
+    return render(request, template, context)

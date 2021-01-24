@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'reservations/css/reservations.css' %}">
+{% endblock %}
 {% block content %}
 
-<h1 class="header-titile"> <span> Order details</span></h1>
+<h1 class=""> <span> Order details</span></h1>
 <!-- Order table from CI Boutique Ado project  -->
 <div class="table-responsive rounded">
     <table class="table table-sm table-borderless">
@@ -86,4 +88,11 @@
     </div>
 </form>
 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'reservations/js/stripe_elements.js' %}"></script>
 {% endblock %}

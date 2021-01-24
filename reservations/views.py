@@ -11,6 +11,8 @@ def create_reservation(request, workshop_id):
     context = {
         'workshop': workshop,
         'order_form': order_form,
+        'stripe_public_key': 'pk_test_51I8HbBFN2cRN53XosVSXRQvzc1gOWhDyGzIn8YGNwGtx78gC81X7SW38cMy4P1poeVIcIVXUxEEw9CorOv0bZIhq00vKwt6zkH',
+        'client_secret': 'test client secret',
     }
 
     return render(request, template, context)

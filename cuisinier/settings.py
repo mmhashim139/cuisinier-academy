@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'workshops',
     'experts',
     'profiles',
+    'reservations',
 ]
 
 MIDDLEWARE = [

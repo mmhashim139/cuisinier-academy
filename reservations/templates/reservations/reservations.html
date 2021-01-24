@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<h1 class="header-titile"> <span> Order details</span></h1>
+<form class="form" action="" method="POST">
+    {% csrf_token %}
+    <div class="row">
+        <div class="">
+            <h1 class="header-titile">{{ workshop.title }}</h1>
+            <label class="section-title-para">Tickets:</label>
+            <input class="" type="number" name="tickets" value="1" min="1" max="15" data-item_id="{{ wprkshop.id }}"
+                id="id_qty_{{ wprkshop.id }}">
+            <input type="submit" class="btn btn-header-2" value="Checkout">
+        </div>
+    </div>
+</form>
+
+{% endblock %}

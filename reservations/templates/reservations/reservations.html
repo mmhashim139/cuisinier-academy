@@ -4,10 +4,6 @@
 {% block content %}
 
 <h1 class="header-titile"> <span> Order details</span></h1>
-<h2 class="header-titile"> {{ user }}</h2>
-<h2 class="header-titile"> {{ user.first_name }}</h2>
-<h2 class="header-titile"> {{ user.last_name }}</h2>
-
 <!-- Order table from CI Boutique Ado project  -->
 <div class="table-responsive rounded">
     <table class="table table-sm table-borderless">
@@ -34,18 +30,17 @@
                 <p class="my-0">{{ workshop.location }}</p>
             </td>
         </tr>
-        <tr>
-            <td colspan="5" class="text-right">
-                <a href="" class="btn btn-header-2">
-                    <span class="">Secure Checkout</span>
-                    <span class="icon">
-                        <i class="fas fa-lock"></i>
-                    </span>
-                </a>
-            </td>
-        </tr>
     </table>
 </div>
 
+<!-- Customer info form -->
+<form action="" method="POST" id="payment-form">
+    {% csrf_token %}
+    <fieldset class="rounded px-3 mb-5">
+        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+        {{ order_form.full_name | as_crispy_field }}
+        {{ order_form.email | as_crispy_field }}
+    </fieldset>
+</form>
 
-    {% endblock %}
+{% endblock %}

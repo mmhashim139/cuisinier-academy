@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'profiles',
     'reservations',
 
-     'crispy_forms',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

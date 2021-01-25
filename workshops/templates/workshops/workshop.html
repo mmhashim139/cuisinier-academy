@@ -5,7 +5,8 @@
 <h1 class="header-titile"> <span> {{ workshop.title }}</span></h1>
 <h1 class="header-titile"> {{ workshop.sub_title }}</h1>
 <!-- booking Button -->
-<form class="" action="{% url 'create_reservation' workshop.id %}" method="POST">
+<form class="" action="{% url 'reservation' workshop.id %}" method="POST">
+    
     {% csrf_token %}
     <div class="">
         <div class="col-12">

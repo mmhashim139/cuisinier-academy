@@ -68,9 +68,10 @@ def create_reservation(request, workshop_id):
         order_form = OrderForm(form_data)
         if order_form.is_valid():
             order = order_form.save()
-            order.order_total = workshop.price
-            order.save()
             workshop = Workshop.objects.get(id=workshop_id)
+            order.order_total = workshop.price
+            order.workshop = workshop
+            order.save()
             order_line_item = OrderLineItem(
                             order=order,
                             workshop=workshop,

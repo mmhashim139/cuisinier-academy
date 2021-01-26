@@ -2,15 +2,13 @@
 {% load static %}
 
 {% block content %}
-
-{% for u in user %}
-<h2 >email : {{ u }}</h2>
-<h2 >first name : {{ u.first_name }}</h2>
-<h2 >last name : {{ u.last_name }}</h2>
-<h2 >phone number : {{ u.phone_number }}</h2>
-
-{% endfor %}
-
-
-
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">{{ user }}</h2>
+                <hr>
+            </div>
+        </div>
 {% endblock %}

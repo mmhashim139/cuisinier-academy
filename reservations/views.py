@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse, HttpResponse
 from django.views.decorators.http import require_POST
+from django.template.loader import render_to_string
 from django.contrib import messages
 from workshops.models import Workshop
 from .forms import OrderForm
@@ -7,6 +8,8 @@ from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
 from .models import Order, OrderLineItem
 from django.conf import settings
+from .webhook_handler import StripeWH_Handler
+from django.core.mail import send_mail
 import stripe
 import json
 
@@ -162,6 +165,22 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
+
+    # Send the user a confirmation email
+    cust_email = order.email
+    subject = render_to_string(
+        'reservations/confirmation_emails/confirmation_email_subject.txt',
+        {'order': order})
+    body = render_to_string(
+        'reservations/confirmation_emails/confirmation_email_body.txt',
+        {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+
+    send_mail(
+            subject,
+            body,
+            settings.DEFAULT_FROM_EMAIL,
+            [cust_email]
+        )
 
     if 'oreder' in request.session:
         del request.session['order']

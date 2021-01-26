@@ -1,1 +1,1 @@
-web: gunicorn cuisinier-academy.wsgi:application
+web: gunicorn cuisinier.wsgi:application

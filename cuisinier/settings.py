@@ -21,10 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'c0#fo)*hz6p5!#ek8=55cx057mzm-i=#x^l$lhkk=98v)c4ohm'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'c0#fo)*hz6p5!#ek8=55cx057mzm-i=#x^l$lhkk=98v)c4oh')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['cuisinier-academy.herokuapp.com', 'localhost']
 

@@ -1,0 +1,1 @@
+web: gunicorn cuisinier-academy.wsgi:application

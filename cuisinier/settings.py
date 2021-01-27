@@ -182,7 +182,6 @@ if 'USE_AWS' in os.environ:
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-    
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'cuisinier-academy'
     AWS_S3_REGION_NAME = 'eu-west-1'
@@ -210,7 +209,7 @@ DEFAULT_FROM_EMAIL = 'admin@cuisinier-academy.com'
 
 DEFAULT_FROM_EMAIL = 'cuisinier-academy@cuisinier-academy.com'
 
-"""
+
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'admin@cuisinier-academy.com'
@@ -222,4 +221,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-"""

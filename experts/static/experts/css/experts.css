@@ -1,3 +1,5 @@
+/* ==== All experts page ==== */
+
 .experts-header {
     font-family: 'flamenco', sans-serif;
     color: red;
@@ -56,4 +58,70 @@
     color: white;
     font-size: 38px;
     font-family: 'flamenco', sans-serif;
+}
+
+
+/* ==== expert profile page ==== */
+
+.experts-about-header {
+    font-family: 'flamenco', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: red;
+    font-size: 48px;
+}
+
+.expert-about {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 50px;
+}
+.about-expert-card {
+    background-color: black;
+    text-decoration: none;
+}
+
+.expert-workshops-header {
+    font-family: 'flamenco', sans-serif;
+    font-size: 48px;
+    color: red;
+    font-size: 42px;
+}
+
+.expert-workshops-btn{
+    color: rgba(255, 255, 255, 0.8) ;
+    border: 1px solid;
+    border-color: rgba(255, 0, 0, 0.5); 
+    border-radius: 300px;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    margin: 5px 15px;
+    padding: 5px 15px;
+}
+.expert-workshops-btn:hover {
+    color: rgba(255, 0, 0);
+    border-color: yellow;
+    text-decoration: none;
+}
+
+
+/* ========= */
+@media only screen and (max-width: 600px) {
+    .experts-about-header {
+        font-size: 32px;
+    }
+    .expert-about {
+        font-size: 18px;
+    }
+    .expert-img {
+    height: 200px;
+    width: 200px;
+    }
+    .expert-workshops-header {
+    font-size: 32px;
+    }
+    .expert-workshops-btn h2 {
+    font-size: 18px ;
+    }
 }

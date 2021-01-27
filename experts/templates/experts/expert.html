@@ -1,16 +1,53 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
+<link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
 {% endblock %}
 {% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="experts-about-header text-center py-4 my-4">{{ expert.name }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card about-expert-card">
+                <img src="{{ expert.profile_image.url }}" class="rounded-circle text-center expert-img"
+                    alt="expert-img">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12">
+                        <p class="expert-about py-4 my-4 text-center">{{ expert.about }}</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="expert-workshops-header text-center">Workshops by {{ expert.name }}</h2>
+                    {% for w in workshop %}
+                    <div class="row justify-content-center">
+                        <a class="expert-workshops-btn" href="{% url 'workshop' w.id %}">
+                            <h2>{{ w.title }}</h2>
+                        </a>
+                    </div>
+                    {% endfor %}
 
-        <h2 class="header-titile">{{ expert.name }}</h2>
-        <!-- If the expert has more than workshop -->
-        {% for w in workshop %}
-        <a href="{% url 'workshop' w.id %}" class="btn btn-header">{{ w }}</a>
-        {% endfor %}
-        <h2 class="header-titile">{{ expert.about }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
 
-{% endblock %}
+<!-- Back to all Experts-->
+<div class="container">
+    <div class="row my-5">
+        <div class="col text-center">
+            <a href="{% url 'experts'%}" class="btn btn-header-2">All Experts</a>
+        </div>
+    </div>
+</div>
+    {% endblock %}

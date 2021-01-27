@@ -1,0 +1,59 @@
+.experts-header {
+    font-family: 'flamenco', sans-serif;
+    color: red;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.experts-sub-header{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    justify-content: left;  
+    margin-bottom: 50px;
+}
+
+.expert-card {
+    background-color: black;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.expert-card:hover {
+    opacity: 1;
+}
+
+.expert-link:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.expert-img{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-card-workshops {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8) ;
+    border: 1px solid;
+    border-color: rgba(255, 0, 0, 0.5); 
+    border-radius: 300px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 10px;
+    margin: 10px 5px;
+}
+.btn-card-workshops:hover {
+    color: rgba(255, 0, 0);
+    border-color: yellow;
+}
+.card-expert-name {
+    margin: 20px auto;
+    color: white;
+    font-size: 38px;
+    font-family: 'flamenco', sans-serif;
+}

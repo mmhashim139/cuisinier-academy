@@ -1,22 +1,45 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
+<link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
 {% endblock %}
 {% block content %}
+<!-- Header -->
+<header class="text-center py-5 mb-4">
+    <div class="container">
+        <h1 class="experts-header text-center">Our Experts</h1>
+        <p class="experts-sub-header text-center py-4 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sapiente illum non alias a sunt?</p>
+    </div>
+</header>
 
- <h1 class="header-titile"> <span> Our Experts</span></h1>
-
-    {% if experts %}
+<div class="container mb-5 pb-5">
+    <div class="row">
+        <!-- Expert card -->
+        {% if experts %}
         {% for expert in experts %}
-        <h2 class="header-titile">{{ expert.name }}</h2>
-        <a href="{% url 'expert' expert.id %}" class="btn btn-header">About  {{ expert.name }}</a>
-        <!-- If the expert has more than workshop -->
-        {% for w in workshop %}
-        <a href="{% url 'workshop' w.id %}" class="btn ">{{ w }}</a>
+        <a href="{% url 'expert' expert.id %}" class="expert-link">
+            <div class="col-xl-4 col-md-6 my-4">
+                <div class="card expert-card">
+                    <img src="{{ expert.profile_image.url }}" class="rounded-circle text-center expert-img"
+                        alt="expert-img">
+                    <div class="text-center">
+                        <h5 class="card-expert-name">{{ expert.name }}</h5>
+                        <div class="card-text">
+                            {% for w in workshop %}
+                            <a href="{% url 'workshop' w.id %}" class="btn btn-card-workshops">{{ w }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
         {% endfor %}
-        <h2 class="header-titile">{{ expert.about }}</h2>
-        {% endfor %}
-    {% endif %}
-
+        {% endif %}
+    </div>
+</div>
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
 {% endblock %}

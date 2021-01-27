@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
+{% endblock %}
 {% block content %}
 
  <h1 class="header-titile"> <span> Our Experts</span></h1>

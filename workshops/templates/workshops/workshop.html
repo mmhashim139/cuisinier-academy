@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
+{% endblock %}
 {% block content %}
 <h1 class="header-titile"> <span> {{ workshop.title }}</span></h1>
 <h1 class="header-titile"> {{ workshop.sub_title }}</h1>

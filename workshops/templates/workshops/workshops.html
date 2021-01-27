@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
+{% endblock %}
 {% block content %}
     <h1 class="header-titile"> <span> All workshops</span></h1>
     {% if workshops %}

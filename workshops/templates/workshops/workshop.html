@@ -1,28 +1,118 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
+<link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
+<link rel="stylesheet" href="{% static 'experts/css/experts.css' %}">
 {% endblock %}
 {% block content %}
-<h1 class="header-titile"> <span> {{ workshop.title }}</span></h1>
-<h1 class="header-titile"> {{ workshop.sub_title }}</h1>
-<!-- booking Button -->
-<form class="" action="{% url 'reservation' workshop.id %}" method="POST">
-    
-    {% csrf_token %}
-    <div class="">
-        <div class="col-12">
-            <input type="submit" class="btn btn-header" value="Reserve your Spot">
+<!--  Workshop page header -->
+<div class="workshop-page-header "
+    style="background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 95%), url('{{ workshop.main_img.url }}');">
+    <h1 class="workshop-page-header-titile">{{ workshop.title }}</h1>
+    <h1 class="workshop-page-header-sub-titile">{{ workshop.sub_title }}</h1>
+    <form class="" action="{% url 'reservation' workshop.id %}" method="POST">
+        {% csrf_token %}
+        <div class="">
+            <div class="col-12">
+                <input type="submit" class="btn btn-workshop-page-header" value="Reserve your Spot">
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Workshop Discription -->
+<div class="container">
+    <div class="row">
+        <p class="workshop-description-main text-center py-4 my-4">{{ workshop.description }}</p>
+    </div>
+</div>
+<!--  Workshop Expert -->
+<div class="container">
+    <div class="row justify-content-center">
+        <h2 class="workshop-container-header text-center">with the Expert</h2>
+    </div>
+    <div class="row justify-content-center">
+        {% for e in expert %}
+        <a href="{% url 'expert' e.id %}" class="expert-link">
+            <div class="card expert-card">
+                <img src="{{ e.profile_image.url }}" class="rounded-circle text-center expert-img" alt="expert-img">
+                <div class="text-center">
+                    <h5 class="card-expert-name">{{ e.name }}</h5>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+</div>
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
+
+<!--  Workshop Details -->
+<div class="container">
+    <div class="row justify-content-center my-3">
+        <h2 class="workshop-container-header text-center">{{ workshop.title }} Agenda</h2>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-5">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ workshop.main_img.url }}" alt="">
+        </div>
+        <div class="col-md-7">
+            <h3 class="work-shop-days">Day 1</h3>
+            <p class="workshop-agenda">{{ workshop.agenda_day_1 }}</p>
         </div>
     </div>
-</form>
-<!-- = = = = = =  -->
-{% for e in expert %}
-<h2 class="header-titile">with the Expert</h2>
-<a href="{% url 'expert' e.id %}" class="btn btn-header">{{ e.name }}</a>
-{% endfor %}
-<h1 class="header-titile"> {{ workshop.description }}</h1>
-<div class="container">
-    <img src="{{ workshop.main_img.url }}" alt="">
+    <div class="row my-4 ">
+        <div class="col-md-7 ">
+            <h3 class="work-shop-days day-2 d-flex justify-content-end">Day 2</h3>
+            <p class="workshop-agenda text-right">{{ workshop.agenda_day_2 }}</p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ workshop.main_img.url }}" alt="">
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col-md-5">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ workshop.main_img.url }}" alt="">
+        </div>
+        <div class="col-md-7">
+            <h3 class="work-shop-days">Day 3</h3>
+            <p class="workshop-agenda">{{ workshop.agenda_day_3 }}</p>
+        </div>
+    </div>
 </div>
+
+<div class="container my-4 mp-2">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <i class="far fa-calendar-alt workshop-icon"></i>
+            <p class="workshop-agenda">{{ workshop.date.date }} @ {{ workshop.date.time }}</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fas fa-map-marker-alt workshop-icon"></i>
+            <p class="workshop-agenda">{{ workshop.location }}</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="fas fa-money-bill-wave workshop-icon"></i>
+            <p class="workshop-agenda">$ {{ workshop.price }}</p>
+        </div>
+    </div>
+    <form class="" action="{% url 'reservation' workshop.id %}" method="POST">
+        {% csrf_token %}
+        <div class="">
+            <div class="text-center ">
+                <input type="submit" class="btn btn-workshop-page" value="Reserve your Spot">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
 {% endblock %}

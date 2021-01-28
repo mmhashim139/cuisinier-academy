@@ -6,7 +6,7 @@
     font-size: 58px;
     font-weight: bold;
 }
-.workshops-sub-header{
+.workshops-sub-header , .workshop-description-main {
     color: rgba(255, 255, 255, 0.76);
     font-size: 36px;
     font-family: 'Lato', sans-serif;
@@ -72,4 +72,124 @@
     .workshops-card-img {
         height: 350px;
     }
+}
+
+/* =============================*/
+/* ==== Workshop Page =========*/
+.workshop-page-header {
+    background-size: cover;
+    height: 500px;
+    padding-top: 120px;
+}
+
+.workshop-page-header-titile {
+    margin: 20px 30px 20px 100px;
+    color: white;
+    font-size: 48px;
+    font-family: 'flamenco', sans-serif;
+    justify-content: left;
+}
+
+.workshop-page-header-main {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    justify-content: left;  
+    margin-bottom: 50px;
+}
+ .workshop-page-header-sub-titile {
+    margin: 20px 330px 20px 100px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    justify-content: left;  
+    margin-bottom: 50px;
+ }
+.btn-workshop-page-header {
+    margin: 30px 20px 20px 100px ;
+    color: rgba(255, 255, 255, 0.8) ;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 0.5); 
+    border-radius: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px 45px;
+}
+.btn-workshop-page-header:hover {
+    color: rgba(255, 0, 0);
+    border-color: yellow;
+    font-weight: bold;
+}
+.workshop-container-header {
+    padding: 5px 15px;
+    color: red;
+    font-size: 48px;
+    font-family: 'flamenco', sans-serif;
+}
+.work-shop-days {
+    color: rgba(255, 0, 0, 0.75);
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;
+}
+.day-2{
+    margin-right: 85px;
+}
+.workshop-agenda{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 15px;;
+}
+
+.btn-workshop-page {
+    margin: 20px ;
+    color: rgba(255, 255, 255, 0.8) ;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid;
+    border-color: rgba(255, 0, 0, 0.5); 
+    border-radius: 300px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px 45px;
+}
+.btn-workshop-page:hover {
+    color: rgba(255, 0, 0);
+    border-color: yellow;
+    font-weight: bold;
+}
+
+.workshop-icon {
+    color: rgba(255, 0, 0, 0.75);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ========= */
+@media only screen and (max-width: 600px) {
+    .workshop-page-header-sub-titile {
+        display: none;
+    }
+    .btn-workshop-page-header {
+        margin: 30px 20px 20px 50px ;
+        padding: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    .workshop-page-header-titile {
+        margin: 20px 30px 20px 30px !important;
+        justify-content: center;
+        text-align: center;
+    }
+    .workshop-description-main{
+        font-size: 28px;
+    }
+    .day-2{
+        margin-right: 10px;
+}
+
 }

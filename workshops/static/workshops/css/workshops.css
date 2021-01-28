@@ -1,0 +1,75 @@
+/* ========= All Workshops ==========*/
+
+.workshops-header {
+    font-family: 'flamenco', sans-serif;
+    color: red;
+    font-size: 58px;
+    font-weight: bold;
+}
+.workshops-sub-header{
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    justify-content: left;  
+    margin-bottom: 50px;
+}
+.workshops-card-img {
+    width: 100%;
+    height: 400px;
+    background-image:  linear-gradient(0deg, rgba(255,0,0,0.8) 15%, rgba(255,0,0,0.8) 40%, rgba(255,0,0,0.8) 100%), url('{{ workshop.main_img.url }}');
+}
+
+.workshops-card-img:hover{
+    -webkit-clip-path: inset(25px);
+    clip-path: inset(25px);
+    background-image:  linear-gradient(0deg, rgba(255,0,0,0.8) 15%, rgba(255,0,0,0.8) 40%, rgba(255,0,0,0.8) 100%), url('{{ workshop.main_img.url }}');
+    text-decoration:none; 
+    cursor:pointer;
+}
+
+.workshops-card-link{
+    text-decoration: none;
+}
+.workshops-card-link:hover {
+    text-decoration: none;
+}
+.workshops-card-header {
+    color: white;
+    font-size: 52px;
+    font-family: 'flamenco', sans-serif;
+    font-weight: bold;
+    justify-content: center;  
+    margin-top: 5px;
+    padding-top: 145px;
+}
+.workshops-card-header-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    justify-content: center; 
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+
+/* ========= */
+@media only screen and (max-width: 600px) {
+    .workshops-header{
+        font-size: 32px;
+    }
+    .workshops-sub-header {
+        font-size: 18px;
+    }
+    .workshops-card-header {
+        font-size: 32px;
+        padding-top: 120px;
+
+    }
+    .workshops-card-header-title {
+        font-size: 18px;
+    }
+    .workshops-card-img {
+        height: 350px;
+    }
+}

@@ -1,18 +1,54 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
+<link rel="stylesheet" href="{% static 'workshops/css/workshops.css' %}">
 {% endblock %}
 {% block content %}
-    <h1 class="header-titile"> <span> All workshops</span></h1>
+
+<!-- Header -->
+<header class="text-center py-2 mb-3">
+    <div class="container">
+        <h1 class="workshops-header text-center">Our Workshops</h1>
+        <p class="workshops-sub-header text-center py-4 my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Amet, sapiente illum non alias a sunt?</p>
+    </div>
+</header>
+
+
+<div class="container">
+
     {% if workshops %}
+    <div class="row mb-5 pb-4 workshops-card">
         {% for workshop in workshops %}
-            <h2 class="header-titile">{{ workshop.title }}</h2>
-            {% for e in expert %}
-                <h2 class="header-titile">with the Expert</h2>
-                <a href="{% url 'expert' e.id %}" class="btn btn-header">{{ e.name }}</a>
-                {% endfor %}
-            <a href="{% url 'workshop' workshop.id %}" class="btn btn-header">workshop here</a>
+        <div class="col-lg-6 mb-3">
+            <a class="workshops-card-link" href="{% url 'workshop' workshop.id %}">
+                <div class="workshops-card-img"
+                    style="background-image: linear-gradient(0deg, rgba(255,165,0,0.3) 0%, rgba(0,0,0, 0.7) 20%, rgba(0,0,0,0.7) 80%, rgba(255,165,0,0.3) 100%), url('{{ workshop.main_img.url }}');;">
+                    <h3 class="workshops-card-header text-center mb-5">{{ workshop.title }}</h3>
+                    <h3 class="workshops-card-header-title text-center mb-5">{{ workshop.sub_title }}</h3>
+                </div>
+            </a>
+        </div>
         {% endfor %}
-        {% endif %}
+    </div>
+
+    {% endif %}
+</div>
+
+<!-- separator -->
+<section>
+    <div class="container-fluid separator-2">
+    </div>
+</section>
+
+<!-- Back to Home-->
+<div class="container">
+    <div class="row my-5 py-4">
+        <div class="col text-center">
+            <a href="{% url 'home'%}" class="btn btn-header-2">Home</a>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

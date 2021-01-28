@@ -19,6 +19,9 @@
 .stripe-style-input {
   box-shadow: 0 1px 3px 0 #cfd7df;
 }
+.ElementsApp, .ElementsApp .InputElement {
+    color: black !important;
+}
 
 .StripeElement--invalid {
   border-color: #fa755a;
@@ -26,4 +29,24 @@
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
+}
+
+.order-header{
+    color: white;
+}
+th {
+    color: red;
+}
+.table-value{
+    color: white;
+}
+.fieldset-label{
+    color: white;
+}
+
+.form-check{
+    color: white;
+}
+.thanks-container{
+    color: white;
 }

@@ -73,7 +73,7 @@ body{
 /* =============================== */
 /* Hero Image and Title */
 .main-header {
-    background-image: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,1) 100%), url('/media/header.jpg'); /* I used https://cssgradient.io/ to generate gradient*/
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/VNwY6X7/pexels-elevate-2jpg.jpg'); /* I used https://cssgradient.io/ to generate gradient*/
     background-size: cover;
     height: 80vh;
 }
@@ -202,12 +202,12 @@ body{
 
 /* ==== separators ==*/ 
 .separator-1 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('/media/separator-1.jpg'); 
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/0mBXNcb/service-1303313-1920.jpg'); 
     background-size: cover;
     height: 30vh;  
 }
 .separator-2 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('/media/separator-1.jpg'); /*change image*/
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/0mBXNcb/service-1303313-1920.jpg'); /*change image*/
     background-size: cover;
     height: 30vh;  
 }

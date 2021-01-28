@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
 {% endblock %}
 {% block content %}
 <!-- Header Content -->
@@ -26,18 +26,20 @@
                         Temporibus deserunt culpa error nisi possimus mollitia reprehenderit accusantium
                         consequatur, quasi incidunt nemo odio architecto dolores assumenda provident officia aut
                         repellendus</p>
-                    <img class="img-fluid show-img" src="../../../media/workshops.jpg" alt="">
+                    <img class="img-fluid show-img" src="https://i.ibb.co/VVgz368/workshops.jpg" alt="workshop-image">
                 </div>
             </div>
             <!-- Workshops listing -->
             <div class="col-lg-6">
                 <div class="container-fluid">
+                    {% for workshop in workshops %}
                     <div class="row">
                         <a class=" workshop-img-bg" href="#">
-                            <h2>Workshop Main Title </h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <h2>{{ workshop.title }}</h2>
+                            <p>{{ workshop.sub_title }}</p>
                         </a>
                     </div>
+                    {% endfor %}
                     <div class="row">
                         <a class=" workshop-img-bg" href="#">
                             <h2>Workshop Main Title</h2>
@@ -83,13 +85,14 @@
     </div>
     <div class="container">
         <div class="row">
+            {% for expert in experts %}
             <div class="col-lg-4 expert-card">
-                <a href="#" class="expert-link">
-                    <img class="rounded-circle text-center expert-img" src="../../../media/chef1.jpg" alt="" />
-                    <h4 class="text-center">Karen Akunowicz</h4>
-                    <p class="text-center">Italian Gastronomy Expert</p>
+                <a href="{% url 'expert' expert.id %}" class="expert-link">
+                    <img class="rounded-circle text-center expert-img" src="{{ expert.profile_image.url }}" alt="" />
+                    <h4 class="text-center">{{ expert.name }}</h4>
                 </a>
             </div>
+            {% endfor %}
             <div class="col-lg-4 expert-card">
                 <a href="#" class="expert-link">
                     <img class="rounded-circle text-center expert-img" src="../../../media/chef1.jpg" alt="" />
@@ -106,15 +109,14 @@
             </div>
         </div>
     </div>
-        <div class="container">
+</section>
+    <div class="container">
         <div class="row my-5">
             <div class="col text-center">
                 <a href="{% url 'experts'%}" class="btn btn-header-2">Our Experts</a>
             </div>
         </div>
     </div>
-</section>
-
 <!-- separator -->
 <section>
     <div class="container-fluid separator-2">
@@ -130,6 +132,8 @@
             totam tempora animi rem assumenda recusandae illum saepe nesciunt vero eius, nostrum corporis fugit officia
             aliquam suscipit! Temporibus sunt numquam sit!</p>
     </div>
+    <!-- for future -->
+    <!--
     <div class="container">
         <div class="row">
             <div class="col text-center">
@@ -137,6 +141,8 @@
             </div>
         </div>
     </div>
+    -->
+    <!-- ======= -->
 </section>
 
 <section class="page-down"></section>

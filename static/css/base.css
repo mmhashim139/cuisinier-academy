@@ -75,7 +75,7 @@ body{
 .main-header {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/VNwY6X7/pexels-elevate-2jpg.jpg'); /* I used https://cssgradient.io/ to generate gradient*/
     background-size: cover;
-    height: 80vh;
+    height: 600px;
 }
 
 .header-titile {
@@ -124,9 +124,7 @@ body{
 
 /* ================================== */
 /* Workshop section */
-.workshops-section{
-    height: 100vh;
-}
+
 .section-title {
     color: red;
     font-size: 48px;
@@ -168,7 +166,7 @@ body{
     color: white;
     text-align: center;
     height: 130px;
-    margin: 5px;
+    margin-top: 22px;
     padding: 10px;
     width: 100%;
     text-decoration:none; 
@@ -209,21 +207,18 @@ body{
 .separator-1 {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/0mBXNcb/service-1303313-1920.jpg'); 
     background-size: cover;
-    height: 30vh;  
+    height: 200px;  
 }
 .separator-2 {
     background-image: linear-gradient(0deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,1) 100%), url('https://i.ibb.co/0mBXNcb/service-1303313-1920.jpg'); /*change image*/
     background-size: cover;
-    height: 30vh;  
+    height: 200px;  
 }
 
 
 /* ============================== */
 /* Our Experts */
-.experts-section ,.about-section{
-    height: 70vh;
 
-}
 .experts-section-header{
     margin: 10px auto;
 }
@@ -283,6 +278,24 @@ body{
     padding-top: 5px;   
     margin-bottom: 50px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .section-title {
+        font-size: 38px;
+    }
+    .workshop-img-bg h2 {
+        font-size: 38px;
+        margin-top: 25px;
+    }
+    .workshop-img-bg p {
+        visibility: hidden;
+    }
+    .about-para {
+        font-size: 22px;
+    }
+}
+
 
 
 /* =============================== */

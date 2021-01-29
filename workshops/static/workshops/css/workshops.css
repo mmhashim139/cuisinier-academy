@@ -174,8 +174,11 @@
     .workshop-page-header-sub-titile {
         display: none;
     }
+    .btn-workshop-page {
+        margin: auto;
+    }
     .btn-workshop-page-header {
-        margin: 30px 20px 20px 50px ;
+        margin-left: 20px;
         padding: 15px;
         justify-content: center;
         text-align: center;

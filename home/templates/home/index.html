@@ -33,25 +33,26 @@
             <div class="col-lg-6">
                 <div class="container-fluid">
                     {% for workshop in workshops %}
-                        <a href="{% url 'workshop' workshop.id %}" class="workshops-card-img-link">
-                            <div class=" workshop-img-bg " style="background-image: linear-gradient(0deg, rgba(255,165,0,0.4) 0%, rgba(0,0,0, 0.3) 20%, rgba(0,0,0,0.3) 80%, rgba(255,165,0,0.4) 100%), url('{{ workshop.main_img.url }}');" >
+                    <a href="{% url 'workshop' workshop.id %}" class="workshops-card-img-link">
+                        <div class=" workshop-img-bg "
+                            style="background-image: linear-gradient(0deg, rgba(255,165,0,0.4) 0%, rgba(0,0,0, 0.3) 20%, rgba(0,0,0,0.3) 80%, rgba(255,165,0,0.4) 100%), url('{{ workshop.main_img.url }}');">
                             <h2>{{ workshop.title }}</h2>
                             <p>{{ workshop.sub_title }}</p>
-                            </div>
-                        </a>
+                        </div>
+                    </a>
                     {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col text-center">
-                <a href="{% url 'workshops'%}" class="btn btn-header-2">All Workshops</a>
-            </div>
+</section>
+<div class="container">
+    <div class="row mt-5 pt-3">
+        <div class="col text-center">
+            <a href="{% url 'workshops'%}" class="btn btn-header-2">All Workshops</a>
         </div>
     </div>
-</section>
+</div>
 
 <!-- separator -->
 <section>
@@ -78,13 +79,13 @@
         </div>
     </div>
 </section>
-    <div class="container">
-        <div class="row my-5">
-            <div class="col text-center">
-                <a href="{% url 'experts'%}" class="btn btn-header-2">Our Experts</a>
-            </div>
+<div class="container">
+    <div class="row my-5">
+        <div class="col text-center">
+            <a href="{% url 'experts'%}" class="btn btn-header-2">Our Experts</a>
         </div>
     </div>
+</div>
 <!-- separator -->
 <section>
     <div class="container-fluid separator-2">

@@ -6,7 +6,7 @@ from workshops.models import Workshop
 def experts(request):
     experts = Expert.objects.all()
     for expert in experts:
-        workshop = list(Workshop.objects.filter(expert=expert))
+        workshop = Workshop.objects.filter(expert=expert)
 
     context = {
         'experts': experts,

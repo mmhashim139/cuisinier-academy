@@ -16,12 +16,16 @@ basic wirframe - attached
 
 
 ### User stories
-User :
-Have a nice user experience , responsive ,rich media , simple navbar
-Easy navigate through website
-view a list of available workshops
-View trainers 
-Learn about the company
+
+
+| Done | As a... | I would like to be able to... | So that I may...|
+| ---- | ------- | ----------------------------- | --------------- |
+|&checkmark;| user | I would like to Have a nice user experience , responsive ,rich media , simple navbar | for better UX/UI  |
+|&checkmark;| user | I would like to Have Easy navigate through website | So i can understand what this website provide |
+|&checkmark;| user | I would like to view a list of available workshops | So i can find workshops best for me |
+|&checkmark;| user | I would like to View the trainers and their details | So i can have confedance of the training |
+|&checkmark;| user | I would like Learn about the company | So i can make sure of the quality of the products |
+
 View other customers testimonies
 Find a contact info and social media links
 Contact the company through contact us form

@@ -228,7 +228,7 @@ body{
 
 .expert-card {
     text-decoration: none;
-    opacity: 0.5;
+    opacity: 0.9;
 }
 .expert-card:hover {
     opacity: 1;

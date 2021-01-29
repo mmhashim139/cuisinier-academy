@@ -326,6 +326,12 @@ body{
     color: gray;
 }
 
+.login-social-icon{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
 .footer-header{
     font-size: 38px;

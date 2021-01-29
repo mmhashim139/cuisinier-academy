@@ -5,8 +5,8 @@ from workshops.models import Workshop
 
 
 def index(request):
-    experts = Expert.objects.all()
-    workshops = Workshop.objects.all()
+    experts = Expert.objects.all()[:3]
+    workshops = Workshop.objects.all()[:4]
     context = {
         'experts': experts,
         'workshops': workshops,

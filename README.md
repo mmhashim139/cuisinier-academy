@@ -1,5 +1,17 @@
 
-cuisinier-academy
+
+
+# [Cuisinier-Academy](https://cuisinier-academy.herokuapp.com/)
+
+## Overview
+Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute 
+To demonstrate my coding knoweldge as a Full stack web developer.
+
+Cuisinier Academy is a Training Provider specialize in Food Making hands workshops 
+
+
+ demo website without a real service provided the idea behaind this project is that Cuisinier Academy provide Hands-on workshops in food making with top experts on the field.
+Take your passion in Food and start create your own masterpiece plates for your family & friends .. and maybe for your future business.
 
 We provide a top in the fild cooking workshops
 
@@ -17,8 +29,10 @@ basic wirframe - attached
 
 ### User stories
 
+#### Users
 
-| Done | As a... | I would like to be able to... | So that I may...|
+
+| Status | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
 |&checkmark;| user | I would like to Have a nice user experience , responsive ,rich media , simple navbar | for better UX/UI  |
 |&checkmark;| user | I would like to Have Easy navigate through website | So i can understand what this website provide |
@@ -38,20 +52,43 @@ basic wirframe - attached
 |&checkmark;| user | I would like to view an order confirmation  , Thanks page after checkout | booking confirmation |
 |&checkmark;| user | I would like to receive an email confirmation after checking out | booking confirmation  |
 
+#### Admin
+
+| Status | As a... | I would like to be able to... | So that I may...|
+| ---- | ------- | ----------------------------- | --------------- |
+|&checkmark;| Admin | I would like to Have a super user account | To access dashboard and manage the site  |
+|&checkmark;| Admin | I would like to be able to add workshop and workshop details | To achive the website goal of selling workshops seats |
+|&checkmark;| Admin | I would like to be able to edit workshop details | To change and update workshop details |
+|&checkmark;| Admin | I would like to be able to delete workshops or make it un published | To manage our schedule and prevent booking outdated workshops |
+|&checkmark;| Admin | I would like to be able to add trainers and create trainers profile with their info | To provide more details on our workshops trainer |
+|&checkmark;| Admin | I would like to be able to edit trainer details | To manage any changes in trainers info |
+|&checkmark;| Admin | I would like to be able to delete trainer profiles | To manage any changes in our trainers and workshops schedule |
+|&checkmark;| Admin | I would like to be able to View workshops registration | To manage workshops regestration & sales |
+|&checkmark;| Admin | I would like verification emails for new account to be sent | To prevent bots and fake account |
+|&checkmark;| Admin | I would like confirmation emails for new orders to be sent | To give our customers record of regestration |
 
 
 
 
-Admin
-Have a super user account 
-add workshop
-edit workshop details
-delete workshop
-add trainer
-edit trainer details
-delete trainer
-Add testimonies
-View  workshops registration
+- goals
+    visitors goals
+    Business Goals
+- user stories
+- Design choices
+- wirframe
 
-Send verification email for new account
-Send order email for confirmed orders
+Features
+- Existing Features
+
+- Features for Future
+
+Information Architecture
+
+
+Technologies Used
+
+Testing
+
+Deployment
+
+Credit

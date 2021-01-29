@@ -50,3 +50,16 @@ th {
 .thanks-container{
     color: white;
 }
+
+.order-details-top {
+    margin: 20px auto;
+    border: 1px solid;
+    border-color: red;
+}
+.order-details-top h5 {
+    color: red;
+}
+.order-details-top p {
+    color: white;
+
+}

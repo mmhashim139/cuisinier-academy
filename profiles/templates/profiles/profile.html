@@ -15,15 +15,15 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <p class="">Order History</p>
+            <p class="text-white">Order History</p>
             <div class="table-responsive">
                 <table class="table table-sm table-borderless">
                     <thead>
                         <tr>
-                            <th>Order Number</th>
-                            <th>Date</th>
-                            <th>Workshop</th>
-                            <th>Order Total</th>
+                            <th class="text-white">Order Number</th>
+                            <th class="text-white">Date</th>
+                            <th class="text-white">Workshop</th>
+                            <th class="text-white">Order Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -34,13 +34,13 @@
                                     {{ order.order_number|truncatechars:6 }}
                                 </a>
                             </td>
-                            <td>{{ order.date }}</td>
+                            <td class="text-white">{{ order.date }}</td>
                             <td>
-                                <ul class="list-unstyled">
+                                <ul class="list-unstyled text-white">
                                     {{ order.workshop.title }}
                                 </ul>
                             </td>
-                            <td>${{ order.order_total }}</td>
+                            <td class="text-white">${{ order.order_total }}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="col-12">
-            <p class="">Profile Information</p>
+            <p class="text-white">Profile Information</p>
             <form class="" action="{% url 'profiles' %}" method="POST" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
@@ -56,4 +56,5 @@
             </form>
         </div>
     </div>
+</div>
     {% endblock %}

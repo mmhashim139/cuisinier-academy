@@ -25,9 +25,11 @@
                     <div class="text-center">
                         <h5 class="card-expert-name">{{ expert.name }}</h5>
                         <div class="card-text">
-                            {% for w in workshop %}
+                        {% for w in workshops %}
+                        {% if w.expert == expert %}
                             <a href="{% url 'workshop' w.id %}" class="btn btn-card-workshops">{{ w }}</a>
-                            {% endfor %}
+                        {% endif %}
+                        {% endfor %}
                         </div>
                     </div>
                 </div>

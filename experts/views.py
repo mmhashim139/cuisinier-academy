@@ -5,12 +5,11 @@ from workshops.models import Workshop
 
 def experts(request):
     experts = Expert.objects.all()
-    for expert in experts:
-        workshop = Workshop.objects.filter(expert=expert)
+    workshops = Workshop.objects.all()
 
     context = {
         'experts': experts,
-        'workshop': workshop
+        'workshops': workshops,
     }
 
     return render(request, 'experts/experts.html', context)

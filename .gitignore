@@ -5,4 +5,4 @@ core.python*
 env.py
 __pycache__/
 *.py[cod]
-*.sqllite3
+db.sqllite3

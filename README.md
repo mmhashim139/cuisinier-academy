@@ -27,8 +27,9 @@ Cuisinier Academy Is a Training Provider specialize in Food Making hands-on work
 With the top experts in the food Industry , Cuisinier Academy provide 3 days workshops thats take the skills level of participants from beginner to experts .
 Either a Foodi , or an entrepreneur or trying to discover the depth of Food making Cuisinier Academy is the place to go .
 
-
-On the other side , Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute to demonstrate my coding knowledge as a Full stack web developer.
+Cuisinier Academy Website show the available workshops & Experts details ,
+By visiting the workshop page you will learn about the workshop details like agenda , location & price
+and you will be able to register in the class and make the payment.
 
 Feel Free to visit 
 [Cuisinier-Academy](https://cuisinier-academy.herokuapp.com/) Live Website 
@@ -36,13 +37,22 @@ Feel Free to visit
 ## UX
 
 ### Project Goals
+- Development Goals:
 
-- visitors goals
+Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute to demonstrate my coding knowledge as a Full stack web developer.
+The goal of the website is to solve a Business need for the client help them sell and collect payment from the website along with other goals.
+
 - Business Goals
 
-The goal of this website to provide a user experiance 
-that convert visitors to paid customers  and provide admin access
-to manage website content and customers regestration
+The Cuisinier Academy managers require a website with nice user experience thats represent the company brand , help the users to learn about the workshops details and who is our experts and what is the available workshops with more details of each workshop.
+Also , the ability of the users to register for the workshop and make the payment .
+For the website admin , They need the ability to track registration and add or remove workshops. 
+
+- visitors goals
+
+
+For website users , They know about the company & the available workshops
+They need easy navigation through the website and be able to make secure payment with their profile details
 
 
 ### User stories

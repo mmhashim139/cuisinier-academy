@@ -1,26 +1,41 @@
-
-
-
+![device viewings](documentation/readmeheader.png)
 # [Cuisinier-Academy](https://cuisinier-academy.herokuapp.com/)
+## Table of Contents
+1. [Overview](#overview)
+2. [UX/UI](#ux)
+    - [Project Goals](#project-goals)
+    - [User stories](#user-stories)
+    - [Design choices](#design-choices)
+    - [Wirframe](#wirframe)
+3. [Information Architecture](#information-architecture)
+    - [Database](#database)
+    - [Applications](#applications)
+4. [Features](#features)
+5. [Technologies Used](#technologies-used)
+6. [Testing](#testing)
+    - [User Story Testing](#user-story-testing)
+    - [Manual Testing](#manual-testing)
+    - [Code Validation](#code-validation)
+7. [Deployment](#deployment)
 
- Image Screen Shot 
+8. [Credits](#credit)
+
 
 ## Overview
-Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute 
-To demonstrate my coding knoweldge as a Full stack web developer.
+Cuisinier Academy Is a Training Provider specialize in Food Making hands-on workshops.
 
-Cuisinier Academy is a Training Provider specialize in Food Making hands workshops 
-
-
-demo website without a real service provided the idea behaind this project is that Cuisinier Academy provide Hands-on workshops in food making with top experts on the field.
-Take your passion in Food and start create your own masterpiece plates for your family & friends .. and maybe for your future business.
-
-We provide a top in the fild cooking workshops
+With the top experts in the food Industry , Cuisinier Academy provide 3 days workshops thats take the skills level of participants from beginner to experts .
+Either a Foodi , or an entrepreneur or trying to discover the depth of Food making Cuisinier Academy is the place to go .
 
 
-## UX/UI
+On the other side , Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute to demonstrate my coding knowledge as a Full stack web developer.
 
-### Goals
+Feel Free to visit 
+[Cuisinier-Academy](https://cuisinier-academy.herokuapp.com/) Live Website 
+
+## UX
+
+### Project Goals
 
 - visitors goals
 - Business Goals
@@ -85,8 +100,11 @@ to manage website content and customers regestration
 basic wirframe - attached 
 
 ## Information Architecture
-### Database diagram 
+
+### Database
 image attached
+
+### Applications
 
 ## Features
 - Existing Features
@@ -97,11 +115,20 @@ image attached
 
 ## Technologies Used
 
+
+
 ## Testing
+### User Story Testing
+### Manual Testing
+### Code Validation
+
+
+
 
 ## Deployment
 
 ## Credit
+
 #### Content 
 #### Media 
 #### Acknowlegements 

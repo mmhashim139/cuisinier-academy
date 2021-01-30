@@ -97,24 +97,61 @@ They need easy navigation through the website and be able to make secure payment
 
 
 ### Design choices
+
+The main theme of the design is to be Dark & Clean with rich media views
+The website will provide the same user experiance in diffrent screem sizes
 ##### Color Scheme
-- Color 1
-- Color 2
-- Color 3
+![device viewings](documentation/colors.png)
+
 ##### Typography
 
-##### Defensive Design
+From Google fonts I picked the following fonts:
+
+- Flamenco
+- Lato
 
 ### wirframe
+In the beginig of the project the wireframes were created using [Balsamiq](https://balsamiq.com/)
+here are the links :
 
-basic wirframe - attached 
+- [Home Desktop](https://i.ibb.co/R3sZb4x/home-desktop.png)
+- [Home Tablet](https://i.ibb.co/r0fjVgf/home-tablet.png)
+- [Home Mobile](https://i.ibb.co/3zC1KNK/home-mobile.png)
+
+
+- [Workshops Desktop](https://i.ibb.co/4fJs163/workshop-desktop.png)
+- [Workshops Tablet](https://i.ibb.co/s624F6R/workshop-mobile.png)
+- [Workshops Mobile](https://i.ibb.co/5T5VMgJ/workshop-tablet.png)
+
+
 
 ## Information Architecture
 
 ### Database
-image attached
+![device viewings](documentation/database_diagram/db.png)
+### Main Applications
+- Experts
+- home
+- reservations
+- profiles
+- workshops
 
-### Applications
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Features
 - Existing Features

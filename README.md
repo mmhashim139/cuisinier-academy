@@ -3,6 +3,8 @@
 
 # [Cuisinier-Academy](https://cuisinier-academy.herokuapp.com/)
 
+ Image Screen Shot 
+
 ## Overview
 Cuisinier Academy Is a Demo website built as a milestone 4 project for Coding Institute 
 To demonstrate my coding knoweldge as a Full stack web developer.
@@ -10,26 +12,27 @@ To demonstrate my coding knoweldge as a Full stack web developer.
 Cuisinier Academy is a Training Provider specialize in Food Making hands workshops 
 
 
- demo website without a real service provided the idea behaind this project is that Cuisinier Academy provide Hands-on workshops in food making with top experts on the field.
+demo website without a real service provided the idea behaind this project is that Cuisinier Academy provide Hands-on workshops in food making with top experts on the field.
 Take your passion in Food and start create your own masterpiece plates for your family & friends .. and maybe for your future business.
 
 We provide a top in the fild cooking workshops
 
+
+## UX/UI
+
+### Goals
+
+- visitors goals
+- Business Goals
 
 The goal of this website to provide a user experiance 
 that convert visitors to paid customers  and provide admin access
 to manage website content and customers regestration
 
 
-
-Database diagram - image attached
-
-basic wirframe - attached 
-
-
 ### User stories
 
-#### Users
+- Users
 
 
 | Status | As a... | I would like to be able to... | So that I may...|
@@ -52,7 +55,7 @@ basic wirframe - attached
 |&checkmark;| user | I would like to view an order confirmation  , Thanks page after checkout | booking confirmation |
 |&checkmark;| user | I would like to receive an email confirmation after checking out | booking confirmation  |
 
-#### Admin
+- Admin
 
 | Status | As a... | I would like to be able to... | So that I may...|
 | ---- | ------- | ----------------------------- | --------------- |
@@ -68,27 +71,37 @@ basic wirframe - attached
 |&checkmark;| Admin | I would like confirmation emails for new orders to be sent | To give our customers record of regestration |
 
 
+### Design choices
+##### Color Scheme
+- Color 1
+- Color 2
+- Color 3
+##### Typography
 
+##### Defensive Design
 
-- goals
-    visitors goals
-    Business Goals
-- user stories
-- Design choices
-- wirframe
+### wirframe
 
-Features
+basic wirframe - attached 
+
+## Information Architecture
+### Database diagram 
+image attached
+
+## Features
 - Existing Features
 
 - Features for Future
 
-Information Architecture
 
 
-Technologies Used
+## Technologies Used
 
-Testing
+## Testing
 
-Deployment
+## Deployment
 
-Credit
+## Credit
+#### Content 
+#### Media 
+#### Acknowlegements 

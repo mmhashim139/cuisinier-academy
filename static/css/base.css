@@ -170,6 +170,7 @@ body{
     padding: 10px;
     width: 100%;
     text-decoration:none; 
+    background-position: center;
 }
 .workshop-img-bg:hover{
     -webkit-clip-path: inset(10px);

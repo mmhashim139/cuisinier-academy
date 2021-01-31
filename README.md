@@ -346,8 +346,8 @@ The images used in this website are :
 - Photo by [Erik Odiin](https://unsplash.com/@odiin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 - Photo by [Augustine Fou on](https://unsplash.com/@augustinefou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
-
-
+#### Acknowledgements
+Special thanks to Code Institute community & mentors , My colleagues in #slack & People in stack-overflow community where I found many of my questions answered there.
 #### Disclaimer
 
 **The content of this website is for educational purposes only.**

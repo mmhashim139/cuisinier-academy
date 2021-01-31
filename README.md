@@ -221,17 +221,133 @@ the footer contain the name of the website and social media icons
 
 
 ## Testing
+
 ### User Story Testing
+
+| User Story | Status|
+| ----------------------------- | --------------- |
+| user can Have a nice user experience , responsive ,rich media , simple navbar | pass |
+| user can Have Easy navigate through website | pass |
+| user can view a list of available workshops | pass |
+| user can View the trainers and their details | pass |
+| user can larn about the company | pass |
+| user can view new workshop details , agenda , trainer, date , location , price| pass |
+| user can register for an account using email| pass |
+| user can register for an account using google account | pass |
+| user can login or logout | pass |
+| user can reset the password if forget| pass |
+| user can rceive eamils to confirm actions in user account | pass |
+| user can have a user profile, with orders history | pass |
+| user can Easy book workshop seat with the account info | pass |
+| user can view order details, cost before buy | pass |
+| user can order in Secure, easy to fill form | pass |
+| user can view an order confirmation  , Thanks page after checkout | pass |
+| user can receive an email confirmation after checking out | pass |
+| Admin Have a super user account | pass |
+| Admin be able to add workshop and workshop details | pass |
+| Admin be able to edit workshop details | pass |
+| Admin be able to delete workshops or make it un published | pass |
+| Admin be able to add trainers and create trainers profile with their info | pass |
+| Admin be able to edit trainer details | pass |
+| Admin be able to delete trainer profiles | pass |
+| Admin be able to View workshops registration | pass |
+| Admin can receive verification emails for new account to be sent | pass |
+| Admin can receive confirmation emails for new orders to be sent | pass |
+
 ### Manual Testing
+
+- Home page
+
+Home page layout responsive as the required layout
+
+- Navbar
+
+Navabr icon and links worked .
+user can see links to login
+If user logedin will see link to his account and log out link
+If user is Admin will see link to the dashboard.
+
+- Workshop cards
+
+background image and resized by if hovered ,
+links for each workshop working .
+
+- Expert Cards
+
+Expert card images showed , links for expert profile is working.
+in all expert page , each expert have links to related workshops.
+
+
+- Workshop page 
+
+links working correctly , details of each workshop showes ,
+reservation button both in the top and button of the page are working.
+
+
+- Order Details.
+
+reservation links renders workshop details above the info form correctly
+
+- Reservation form 
+
+the form easy to filled , if user registered profile data will be renderd.
+and validation message will show for any error
+
+- Thanks page 
+
+with order details  rendered correcctly for each workshop and link to other workshops.
+email confirmation sent once the order filled.
+
+- My account
+
+Order history and profile information are rendered correctly .
+
 ### Code Validation
+For HTML & CSS Testing I used 
 
-
+* [W3C Mark-up Validation Service](https://validator.w3.org/) HTML Validator
+* [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) CSS Validator
 
 
 ## Deployment
+#### Heroku 
+
+The Deployment through Heroku was through the following steps
+- Create an app in Herouku
+- after push the code to github 
+- in deploy section
+- link Heroku with github account
+- choose the project repo. 
+- in Manual deploy 
+- Choose a master branch to deploy
+- click to deploy
+
+#### AWS - S3
+for media and static files storage i created S3 bucket 
+- following the step in [Create an S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html)
 
 ## Credit
+- The main model and functions in this project inspired and customized from Code Institute Boutique Ado project .
 
-#### Content 
 #### Media 
-#### Acknowlegements 
+The images used in this website are :
+- Photo by [Phil Hearing](https://unsplash.com/@philhearing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Tamara Gak](https://unsplash.com/@tamara_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Nicholas Barbaros](https://unsplash.com/@nicubarbaros?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Bermix Studio](https://unsplash.com/@bermixstudio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+
+- Photo by [Sole D'Alessandro G.](https://unsplash.com/@s___d___g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Alex Hu](https://unsplash.com/@alexandwich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Pigi Mazzoli](https://unsplash.com/@pigibear?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Gabriella Clare Marino](https://unsplash.com/@gabiontheroad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+- Photo by [Monika Grabkowska](https://unsplash.com/@moniqa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Erik Odiin](https://unsplash.com/@odiin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Photo by [Augustine Fou on](https://unsplash.com/@augustinefou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) [Unsplash](https://unsplash.com/s/photos/bread-making?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+
+
+#### Disclaimer
+
+**The content of this website is for educational purposes only.**

@@ -138,29 +138,85 @@ here are the links :
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Features
-- Existing Features
+#### Existing Features
 
-- Features for Future
+- Home page hero 
+
+larg hero with background image that have dark gradiant lines & Text  header
+with diffrent styles for some text and call to action .
+The header will tak all the screen and navbar icon at the top left to let the focus
+only in the hero section texts.
+
+- Navbar 
+
+for the navbar , the design is not to add top links in the page only the navbar icon
+once the user click in the icon the top links menue will show in full screen with black background
+and centered menue lists .
+by hovering on the link the color will change from the white to red .
+
+
+- Workshop Section
+
+The workshop section seperated to two coloms in big screens .
+one with about workshops section and the other with workshop cards
+
+
+- Workshops Cards
+
+workshop cards with background image from the workshop main image and dark gradiant.
+by hovering the workshop card, the size of the cards will reduced and croser pointer will show.
+
+- Home page buttons 
+
+buttons with red border backgrounds , by hovering the button will changed to yellow.
+
+- Experts cards
+
+each expert have an image and name card , with slightly dark opacity .
+if user hover on the card the croser become pointer and opacity reduced to create visual interaction.
+
+- Footer
+With black background and white color 
+the footer contain the name of the website and social media icons
+
+
+####  Features for Future
 
 
 
 ## Technologies Used
+
+* HTML5
+
+* CSS3
+
+* JavaScript
+
+* [Bootstrap](https://www.bootstrapcdn.com/)
+
+* [Google fonts](https://fonts.google.com/)
+
+* [Font Awesome](https://fontawesome.com/)
+
+* [Python](https://www.python.org/)
+
+* [Django](https://www.djangoproject.com/) 
+
+* [AWS S3](https://aws.amazon.com/)
+
+* [Stripe](https://stripe.com/gb)
+
+* [GitHub](https://github.com/)
+
+* [Gitpod](https://www.gitpod.io/) As an IDE
+
+* [Balsamiq](https://balsamiq.cloud/) To create wireframes
+
+* [PostgreSQL](https://www.postgresql.org/) 
+
+* [IMGBB ](https://imgbb.com/) 
+
 
 
 
